@@ -1,0 +1,13 @@
+[OPTIONS]
+filename = C:\Program Files (x86)\World of Warcraft\_classic_\WTF\Account\{WOW_ACCOUNT_NAME_GOES_HERE}\SavedVariables\GuildBankNow.lua
+discordtoken = {DISCORD_BOT_TOKEN_GOES_HERE}
+discordguildnumber = {DISCORD_GUILD_NUMBER_GOES_HERE}
+discordchannelnumber = {DISCORD_CHANNEL_NUMBER_GOES_HERE}
+discordmessagenumber = 
+characternames = ["Toonone - Server","Toontwo - Server"]
+excludeditems = [6948]
+
+[DISPLAY]
+allitems = True
+characterspecificitems = True
+reversesort = True

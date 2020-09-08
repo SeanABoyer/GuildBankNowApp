@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="discord.net" Version="2.2.0" />
+    <PackageReference Include="ini-parser" Version="3.4.0" />
+    <PackageReference Include="nlua" Version="1.5.1" />
+  </ItemGroup>
+
+</Project>
