@@ -1,5 +1,8 @@
 # GuildBankNowApp
 
+## Obtaining the .Exe
+The `.exe` can be found on the releases page [Here](https://github.com/SeanABoyer/GuildBankNowApp/releases/).
+
 ## Compile from source code
 If you would like to compile your own exe from this code. you will need dotnet 3.1.401 or greater. The following command can be used to compile to a single `.exe` file.
 
@@ -45,3 +48,26 @@ All of the properties under Display can be tinkered with to change the way text 
 - `allitems` [True/False] determines whether or not show all of them items joined togeother.
 - `characterspecificitems` [True/False] determines whether or not to show character specific items.
 - `reversesort` [True/False] determines whether or not to reverse the sort order (defaults to sorting by count with the largest at the top).
+
+## Automating Uploads with Windows Task Scheduler
+If you want this to run on a regular basis without your need to run the exe, you can use Windows Task Scheduler.
+1. Press the Windows Button and search for "Task Scheduler"
+2. On the Right Hand side, Select "Create Baic Task"
+3. Name your Task and Select Next.
+4. Select your tigger and Select Next.
+5. Select any other options needed for your trigger. In the case of a Daily trigger, it requires the dat to start and what time to execute, as well as how many days should occur between executions. Then Select next.
+6. Choose Start a Program and Select Next.
+7. Select the GuildBankNow.exe File, Make sure the Start in is Full Path to the Directory your `.ini` is loactred in.
+8. Select Finish.
+
+        Start a Program = C:\Users\UserName\Documents\GuildBankNowApp\GuildBankNow.exe
+        Start in        = C:\Users\UserName\Documents\GuildBankNowApp\
+ 
+ ### Hiding the Comand Prompt when running from Windows Task Scheduler
+ If you want to make sure no window appears when Task Scheduler executes the `.exe` you will need to open the choose the option to have it run whether user is logged in or not.
+1. Press the Windows Button and search for "Task Scheduler"
+2. On the Right Hand side, Select "Create Baic Task"
+3. Select the Task Scheduler Library Folder on the Left hand side.
+4. Double Click the Task you created.
+5. Under General Select `"Run whether user is logged on or not"` and check `"Do not store password..."`.
+6. Select ok.
